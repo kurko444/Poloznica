@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html height="100vh" width="100vw">
+<head>
+    <meta lang="sl-SI" charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPN obrazec Miha K</title>
+</head>
+<body>
+    <div class="UPNWrapper">
+        <form action="GET">
+            <div class="talon">
+                <p class="A1">UPN</p>
+                <p class="A3">Ime plačnika</p>
+                <input type="text" name="ime_placnika" class="A4">
+                <p class="A5">Namen / rok plačila</p>
+                <input type="text" name="namen_placila" class="A6">
+                <div class="znesekWrapper">
+                  <div class="znesekWrapper_levo">
+                    <p class="A7">EUR</p>
+                  </div>
+                  <div class="znesekWrapper_desno">
+                    <p class="A8">Znesek</p>
+                    <input type="text" name="znesek" class="A9">
+                  </div>
+                </div>
+                <p class="A10">IBAN prejemnika in BIC banke prejemnika</p>
+                <input type="text" name="iban_bic_banke" class="A11">
+                <p class="A13">Referenca prejemnika</p>
+                <input type="text" name="referenca_prejemnika" class="A14">
+                <p class="A15">Ime prejemnika</p>
+                <input type="text" name="ime_prejemnika" class="A16">
+                <p class="A18">Potrditev plačila UPN</p>
+            </div>
+
+            <div class="nalog">
+              <div class="nalog_placnik">
+                <div class="beseda_placnik">
+                  <p class="placnik">PLAČNIK</p>
+                </div>
+                <div class="polja_placnik">
+                  <div class="nalog_placnik_zgornji">
+                    <div class="nalog_placnik_zgornji_levo">
+                      <div class="npzl_zgornji">
+                        <!-- to mora biti vse v eni liniji -->
+                        <p class="A20 manj_znak_razmaka">-----&nbsp;</p><p class="A21">IBAN</p><p class="manj_znak_razmaka A22">-----------------------------------------------------------------------------------------------------------&nbsp;&nbsp;&nbsp;&nbsp;</p><p class="A23">Polog</p><p class="manj_znak_razmaka A24">&nbsp;&nbsp;&nbsp;&nbsp;---------------&nbsp;&nbsp;&nbsp;&nbsp;</p><p class="A25">Dvig</p>
+                        <input type="text" name="IBAN_placnika" class="A28">
+                        <div class="tri_polja_wrapper">
+                          <!-- to mora biti vse v eni liniji -->
+                          <div class="polog"></div><div class="crna_pika"></div><div class="dvig"></div>
+                        </div>
+                        <p class="A32">Referenca</p>
+                        <input type="text" name="referenca_placnika_1" class="A33">
+                        <input type="text" name="referenca_placnika_2" class="A34">
+                        <p class="A35">Ime in naslov</p>
+                        <input type="text" name="ime_placnika" class="A36">
+                      </div>
+                    </div>
+                    <div class="nalog_placnik_zgornji_desno">
+                      <canvas id="podpis">Vaš brskalnik ne podpira canvas elementa. Prosimo, naložite Firefox.</canvas>
+                    </div>
+                  </div>
+                  <div class="nalog_placnik_spodnji">
+                    <div class="nps_zgornji">
+                      <p class="A39">Koda namena</p><p class=""></p><p class="A40">Namen / rok plačila</p><p class="A41">Nujno</p>
+                    </div>
+                    <div class="nps_spodnji">
+                      <input type="text" name="koda_namena" class="A42"><input type="text" name="namen_placila" class="A43"><div class="A44"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="nalog_prejemnik">
+                <div class="besedilo_prejemnik">
+                  <p class="beseda_prejemnik">PREJEMNIK</p>
+                </div>
+                <div class="polja_prejemnik">
+                  <div class="prejemnik_top_text">
+                    <p class="manj_znak_razmaka A46">------------------------&nbsp;</p><p class="A47">Znesek</p><p class="manj_znak_razmaka A48">--------------------------------------------------------&nbsp;</p><p class="A49">Datum plačila</p><p class="manj_znak_razmaka A50">------------------------------------&nbsp;</p><p class="A51">BIC banke prejemnika</p><p class="manj_znak_razmaka A52">-------------------------</p>
+                  </div>
+                  <div class="prejemnik_top_inputi">
+                    <p class="A53">EUR</p><input type="text" name="znesek" class="A54"><input type="text" name="datum_placila" class="A55"><input type="bic_banke_prejemnika" name="" class="A56"><div class="A57"></div>
+                  </div>
+                  <div class="prejemnik_iban_izjava_text">
+                    <p class="A58">IBAN</p><p class="A59">Izjava</p>
+                  </div>
+                  <div class="prejemnik_iban_izjava_input">
+                    <input type="text" name="iban_prejemnika" class="A60"><div class="A61"></div>
+                  </div>
+                  <div class="prejemnik_referenca_text">
+                    <p class="A62">Referenca</p>
+                  </div>
+                  <div class="prejemnik_referenca_input">
+                    <input type="text" name="referenca_prejemnika_1" class="A63"><input type="text" name="referenca_prejemnika_2" class="A64"><p class="A65" style="font-size: 11pt; font-weight: bold;">UPN</p><p class="A65_2">&nbsp;-&nbsp;Univerzalni plačilni nalog</p>
+                  </div>
+                  <div class="prejemnik_ime_text">
+                    <p class="A66">Ime in naslov</p>
+                  </div>
+                  <div class="prejemnik_ime_input">
+                    <input type="text" name="ime_naslov_prejemnika" class="A67"><div class="A68"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="nalog_noga">
+                <div class="ez_margin">
+                  <p class="A73">Prosimo ne pišite in ne žigosajte v tem prostoru</p><p class="A74">Obrazec UPN - Univerzalni plačilni nalog</p>
+                </div>
+              </div>
+            </div>
+        </form>
+    </div>
+    <!-- Skripta za risanje v canvasu (https://www.youtube.com/watch?v=-wW9LMRXPsE) -->
+    <script type="text/javascript">
+    var canvas = document.getElementById("podpis");
+    var ctx = canvas.getContext("2d");
+    var painting = document.getElementById("podpis");
+    var paintStyle = getComputedStyle(painting);
+    canvas.width = parseInt(paintStyle.getPropertyValue("width"));
+    canvas.height = parseInt(paintStyle.getPropertyValue("height"));
+
+    /*moje linije za tekst*/
+    ctx.lineWidth = 3;
+    ctx.strokeStyle = "#ff674d";
+    ctx.font="2mm Helvetica";
+
+    ctx.beginPath();
+    ctx.moveTo(5,85);
+    ctx.lineTo(159,85);
+    ctx.stroke();
+    ctx.closePath();
+
+    ctx.fillStyle = "#ff674d";
+    ctx.fillText("Podpis plačnika",55,94);
+    ctx.fillText("(neobvezno žig)",55,104);
+    /*nastavi vrednosti za podpis*/
+
+    var mouse = {x: 0, y: 0};
+
+    canvas.addEventListener("mousemove", function(e){
+      mouse.x = e.pageX - this.offsetLeft;
+      mouse.y = e.pageY - this.offsetTop;
+    }, false);
+
+    ctx.lineWidth = 0.25;
+    ctx.lineJoin = "round";
+    ctx.lineCap = "round";
+    ctx.strokeStyle = "#000000";
+
+    canvas.addEventListener("mousedown", function(e) {
+      ctx.beginPath();
+      ctx.moveTo(mouse.x, mouse.y);
+      canvas.addEventListener("mousemove", onPaint, false);
+    }, false);
+
+    canvas.addEventListener("mouseup", function() {
+      canvas.removeEventListener("mousemove", onPaint, false);
+    }, false);
+
+    var onPaint = function() {
+      ctx.lineTo(mouse.x, mouse.y);
+      ctx.stroke();
+    };
+
+    </script>
+</body>
+</html>

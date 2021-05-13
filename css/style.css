@@ -1,0 +1,416 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+input{
+  font-family: monospace;
+}
+p{
+  font-family: 'Helvetica';
+  color: #fa4616;
+  font-size: 7pt;
+}
+.UPNWrapper{
+    width: 210mm;
+    height: 101.6mm;
+    background: white;
+    margin: 150px auto;
+    border: 0.25mm solid black;
+}
+.talon, .nalog{
+    float: left;
+    box-sizing: border-box;
+}
+.talon{
+    width: 60mm;
+    height: 101.6mm;
+    border-right: 0.25mm dotted grey;
+    padding-left: 4mm;
+    padding-top: 4mm;
+}
+.nalog{
+    width: 150mm;
+    height: 101.6mm;
+}
+.A1{
+    font-weight: bold;
+    font-size: 10pt;
+    color: black;
+}
+.A4, .A6{
+    width: 53mm;
+    height: 9mm;
+    border: 0.25mm solid rgb(255, 103, 77);
+}
+.znesekWrapper{
+   height: 8.3mm;
+   width: 54mm;
+}
+.znesekWrapper_levo{
+   padding-left: 4mm;
+   display: inline;
+   height: 100%;
+   width: 13mm;
+   box-sizing: border-box;
+   float: left;
+}
+.A7{
+   font-size: 11pt;
+   line-height: 11.2mm;
+   display: inline;
+   color: black;
+   font-weight: bold;
+}
+.znesekWrapper_desno{
+   width: 40mm;
+   height: 100%;
+   box-sizing: border-box;
+   float: left;
+}
+.A8{
+   color: rgb(255, 103, 77);
+   width: 9mm;
+   padding-left: 1mm;
+}
+.A9{
+   width: 40mm;
+   height: 5mm;
+   border: 1px solid rgb(255, 103, 77);
+   text-align: right;
+}
+.A10{
+  margin-top: 0.5mm;
+}
+.A11{
+   width: 53mm;
+   height: 13.5mm;
+   border: 0.25mm solid rgb(255, 103, 77);
+}
+.A14{
+  width: 53mm;
+  height: 5mm;
+  border: 0.25mm solid rgb(255, 103, 77);
+}
+.A16{
+  width: 53mm;
+  height: 9mm;
+  border: 0.25mm solid rgb(255, 103, 77);
+}
+.A18{
+  margin-top: 19mm;
+  font-size: 6pt;
+}
+.nalog_placnik{
+  height: 39mm;
+  width: 150mm;
+  background-color: rgba(255, 103, 77,0.2);
+}
+.nalog_prejemnik{
+  height: 45.55mm;
+  width: 150mm;
+  background-color: rgba(255, 181, 17, 0.2);
+}
+.nalog_noga{
+  height: 17.05mm;
+  width: 150mm;
+}
+.beseda_placnik, .polja_placnik{
+  float: left;
+}
+.beseda_placnik{
+  height: 39mm;
+  width: 3.75mm;
+  line-height: 3.75mm;
+  padding-top: 21.5mm; /*ta vrednost "centrira" besedo PLAČNIK*/
+  box-sizing: border-box;
+}
+.placnik{
+  transform: rotate(270deg);
+  text-align: center;
+  font-size: 7pt;
+  font-weight: bold;
+}
+.polja_placnik{
+  height: 39mm;
+  width: 146.25mm;
+}
+.nalog_placnik_zgornji{
+  height: 30.35mm;
+  width: 146.25mm;
+}
+.nalog_placnik_zgornji_levo{
+  height: 30.35mm;
+  width: 101.24mm;
+  float: left;
+}
+.nalog_placnik_zgornji_desno{
+  height: 30.35mm;
+  width: 45mm;
+  float: left;
+  padding: 0.25mm;
+  box-sizing: border-box;
+  border: 0.25mm double rgb(255, 103, 77);
+  background-color: white;
+}
+#podpis{
+  width: 43.5mm;
+  height: 28.85mm;
+  background: white;
+  border: 0.25mm double rgb(255, 103, 77);
+}
+.nalog_placnik_spodnji{
+  height: 8.65mm;
+  width: 146.25mm;
+}
+.npzl_zgornji{
+  margin-top: -1.5mm;
+  height: 4mm;
+}
+
+.manj_znak_razmaka{
+  letter-spacing: -0.7px;
+}
+.A20{
+  margin-left: -3mm;
+}
+.A20, .A21, .A22, .A23, .A24, .A25{
+  display: inline-block;
+}
+.A28{
+  border: 0.25mm solid rgb(255, 103, 77);
+  height: 5mm;
+  width: 71.25mm;
+  /* TODO: put in a custom background */;
+  letter-spacing: 0.77em;
+  float: left;
+}
+.tri_polja_wrapper{
+  height: 5mm;
+  width: 28mm;
+  float: left;
+}
+.polog, .dvig{
+  display: inline-block;
+  height: 4mm;
+  width: 4mm;
+  margin-top: 0.5mm;
+  background-color: white;
+  border: 0.25mm solid rgb(255, 103, 77);
+  box-sizing: border-box;
+}
+.crna_pika{
+  display: inline-block;
+  background-color: black;
+  height: 2.54mm;
+  width: 2.54mm;
+}
+.polog{
+ margin-left: 3.6mm;
+}
+.crna_pika, .dvig{
+  margin-left: 6.3mm;
+}
+.A32{
+  clear: both;
+  height: 2.5mm;
+}
+.A33{
+  border: 0.25mm solid rgb(255, 103, 77);
+  display: inline-block;
+  height: 5mm;
+  width: 18mm;
+  letter-spacing: 0.77em;
+}
+.A34{
+  border: 0.25mm solid rgb(255, 103, 77);
+  height: 5mm;
+  width: 78.2mm;
+  letter-spacing: 0.42em;
+  margin-left: 2mm;
+}
+.A36{
+  border: 0.25mm solid rgb(255, 103, 77);
+  height: 9.6mm;
+  width: 99.5mm;
+}
+.nps_zgornji{
+  height: 3mm;
+}
+.nps_spodnji{
+  height: 5.5mm;
+}
+.A39{
+  width: 17mm;
+  float: left;
+}
+.A40{
+  float: left;
+  margin-left: 5mm;
+}
+.A41{
+  float: left;
+  margin-left: 92mm;
+}
+.A42{
+  float: left;
+  border: 0.25mm solid rgb(255, 103, 77);
+  height: 5mm;
+  width: 18mm;
+  letter-spacing: 0.77em;
+}
+.A43{
+  float: left;
+  border: 0.25mm solid rgb(255, 103, 77);
+  margin-left: 3.75mm;
+  height: 5mm;
+  width: 110mm;
+}
+.A44{
+  border: 0.25mm solid rgb(255, 103, 77);
+  background-color: white;
+  margin-left: 4mm;
+  margin-top: 0.5mm;
+  display: inline-block;
+  height: 4mm;
+  width: 4mm;
+}
+.besedilo_prejemnik{
+  height: 45.55mm;
+  width: 3.75mm;
+  float: left;
+  line-height: 3.75mm;
+  padding-top: 25mm; /*ta vrednost "centrira" besedo PREJEMNIK*/
+}
+.beseda_prejemnik{
+  transform: rotate(270deg);
+  text-align: center;
+  font-size: 7pt;
+  font-weight: bold;
+}
+.polja_prejemnik{
+  height: 45.55mm;
+  width: 146.24mm;
+  float: left;
+}
+.A46{
+  margin-left: -3mm;
+  float: left;
+}
+.prejemnik_top_text{
+  height: 3.5mm;
+}
+.prejemnik_top_inputi{
+  height: 6mm;
+}
+.A47, .A48, .A49, .A50, .A51, .A52, .A53, .A54, .A55, .A56, .A57, .A58, .A59, .A60, .A61, .A63, .A64, .A65, .A67, .A68, .A73, .A74{
+  float: left;
+}
+.A53{
+  font-size: 11pt;
+  text-align: right;
+  color: black;
+  width: 10mm;
+  line-height: 6mm;
+  font-weight: bold;
+}
+.A54{
+  height: 5mm;
+  width: 40mm;
+  border: 0.25mm solid rgb(255, 103, 77);
+  margin-left: 2mm;
+  text-align: right;
+  letter-spacing: 0.3em;
+}
+.A55{
+  height: 5mm;
+  width: 35mm;
+  border: 0.25mm solid rgb(255, 103, 77);
+  margin-left: 2mm;
+}
+.A56{
+  height: 5mm;
+  width: 40mm;
+  border: 0.25mm solid rgb(255, 103, 77);
+  margin-left: 2mm;
+}
+.A57{
+  height: 2.54mm;
+  width: 2.54mm;
+  background-color: black;
+  margin-left: 5.5mm;
+  margin-top: 1.8mm;
+}
+.A59{
+  margin-left: 130mm;
+}
+.A60{
+  height: 5mm;
+  width: 125mm;
+  border: 0.25mm solid rgb(255, 103, 77);
+}
+.A61{
+  height: 4mm;
+  width: 4mm;
+  background-color: white;
+  margin-left: 11.2mm;
+  margin-top: 0.5mm;
+  border: 0.25mm solid rgb(255, 103, 77);
+}
+.prejemnik_referenca_text, .A62{
+  height: 3.75mm;
+  width: 100mm;
+}
+.A62{
+  clear: both;
+}
+.prejemnik_referenca_input{
+  height: 6mm;
+  width: 145mm;
+  margin-top: 8mm;
+}
+.A63{
+  height: 5mm;
+  width: 18mm;
+  border: 0.25mm solid rgb(255, 103, 77);
+}
+.A64{
+  height: 5mm;
+  width: 80mm;
+  border: 0.25mm solid rgb(255, 103, 77);
+  margin-left: 2mm;
+}
+.A65{
+  margin-left: 3mm;
+  color: black;
+}
+.A65_2{
+  line-height: 5mm;
+  color: black;
+}
+.prejemnik_ime_text{
+  height: 3.75mm;
+}
+.prejemnik_ime_input{
+  height: 9mm;
+  width: 145mm;
+}
+.A67{
+  height: 9mm;
+  width: 132.5mm;
+  border: 0.25mm solid rgb(255, 103, 77);
+}
+.A68{
+  height: 2.54mm;
+  width: 2.54mm;
+  background-color: black;
+  margin-top: 3.2mm;
+  margin-left: 5mm;
+}
+.ez_margin{
+  margin-top: 14mm;
+  width: 150mm;
+  height: 6mm;
+}
+.A74{
+  margin-left: 45mm;
+}
